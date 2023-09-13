@@ -156,11 +156,19 @@ form .user-data {
   padding-top: 0px;
 }
 
+.total-main h2 {
+  font-size: calc(1.9vmin);
+}
+
 .response .list {
   margin-bottom: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 600px;
+}
+
+.city {
+  margin-bottom: 15px;
 }
 
 .react-datepicker,

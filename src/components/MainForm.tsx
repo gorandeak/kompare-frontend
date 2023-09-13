@@ -231,6 +231,7 @@ const MainForm: React.FC<MainFormProps> = ({
         <div>
           <label>City:</label>
           <select
+            className="city"
             name="city"
             value={formData.city}
             onChange={handleChange}
