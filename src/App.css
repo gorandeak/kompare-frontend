@@ -1,0 +1,196 @@
+.App {
+  text-align: center;
+  font-size: calc(1.9vmin);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App.css */
+
+.sidebar {
+  background: #6a0098;
+  color: white;
+  height: 100vh;
+  text-align: left;
+  display: grid;
+  justify-content: center;
+  align-content: baseline;
+  padding-top: 50px;
+}
+
+.sidebar .coverages {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar div {
+  margin-bottom: 10px;
+}
+
+.warning-text {
+  color: red;
+  margin-top: 0px;
+  font-size: 0.7em;
+  padding-left: 10px;
+}
+
+.header {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 4fr 1fr;
+  background: #6a0098;
+  color: white;
+}
+
+.header div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.header .total-main {
+  display: flex;
+}
+.header .total {
+  font-size: 1.5em;
+}
+.header .total span {
+  padding-left: 10px;
+}
+
+.mainform-sidebar {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 3fr 1fr;
+}
+
+form,
+.response,
+.mainform-sidebar .total-main {
+  display: grid;
+  justify-items: start;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+form div {
+  display: flex;
+  justify-items: start;
+}
+form div label,
+form div input {
+  width: 300px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+form div input,
+form div select {
+  height: 25px;
+}
+
+form div select {
+  width: 308px;
+  height: 31px;
+}
+
+form div button {
+  margin-left: 300px;
+  height: 31px;
+}
+
+form .user-data {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.response div {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.response .base-price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 600px;
+}
+
+.mainform-sidebar .total-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 600px;
+  padding-top: 0px;
+}
+
+.response .list {
+  margin-bottom: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 600px;
+}
+
+.react-datepicker,
+.react-datepicker__header,
+.react-datepicker__tab-loop,
+.react-datepicker__month-container,
+.react-datepicker__month,
+.react-datepicker__triangle,
+.react-datepicker__current-month.react-datepicker__current-month--hasYearDropdown,
+.react-datepicker__header__dropdown.react-datepicker__header__dropdown--scroll,
+.react-datepicker__year-dropdown.react-datepicker__year-dropdown--scrollable {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .header {
+    grid-template-columns: auto;
+  }
+
+  .header > div {
+    grid-template-columns: auto;
+  }
+
+  .header .total-main {
+    display: grid;
+  }
+  .header .total {
+    display: block;
+  }
+  .header .total span {
+    padding-left: 0px;
+  }
+}
